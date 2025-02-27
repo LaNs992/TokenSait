@@ -37,6 +37,18 @@ gsap.from(".container__header > * > *", {
   },
 });
 
+gsap.from(".hero-image ", {
+  x: 300, // Вылетает с правой стороны
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+});
+gsap.from(".hero-text ", {
+  x: -300, // Вылетает с правой стороны
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+});
 let solTl = gsap.timeline({
   scrollTrigger: {
     trigger: "#usteam",
@@ -47,7 +59,8 @@ let solTl = gsap.timeline({
 
 solTl
   .from(".block__r--main", { opacity: 0, scale: 1.05, stagger: { each: 0.1 } })
-  .from(".block__r--low", { opacity: 0, scale: 1.05, stagger: { each: 0.1 } });
+  .from(".block__r--low", { opacity: 0, scale: 1.05, stagger: { each: 0.1 } })
+  .from(".block__r--text", { opacity: 0, scale: 1.05, stagger: { each: 0.1 } });
 
 let findTl = gsap.timeline({
   scrollTrigger: {
@@ -64,14 +77,14 @@ findTl
 
 let caseTL = gsap.timeline({
   scrollTrigger: {
-    trigger: ".case",
+    trigger: ".container__coming",
     start: "top 40%",
     end: "bottom bottom",
   },
 });
+let flipped = false;
 
-caseTL.from(".case__title", { opacity: 0, scale: 1.05 });
-caseTL.from(".case__item", {
+caseTL.from(".list__txt ", {
   opacity: 0,
   scale: 1.05,
   stagger: { each: 0.1 },
@@ -79,18 +92,13 @@ caseTL.from(".case__item", {
 
 let intTL = gsap.timeline({
   scrollTrigger: {
-    trigger: ".int",
+    trigger: ".token__main",
     start: "top 40%",
     end: "bottom bottom",
   },
 });
 
-intTL.from(".int__text > *", {
-  opacity: 0,
-  scale: 1.05,
-  stagger: { each: 0.1 },
-});
-intTL.from(".int__subtitle, .person__img, .person__name", {
+intTL.from(".token__text , .token__main", {
   opacity: 0,
   scale: 1.05,
   stagger: { each: 0.1 },
@@ -104,7 +112,7 @@ intTL.from(".int__item", {
 
 let techTL = gsap.timeline({
   scrollTrigger: {
-    trigger: ".tech",
+    trigger: ".block__maz, .cardsb",
     start: "top 40%",
     end: "bottom bottom",
   },
@@ -117,7 +125,7 @@ techTL
     scale: 1.05,
     stagger: { each: 0.1 },
   })
-  .from(".tech__card", {
+  .from(".maz__card, .cardsb", {
     opacity: 0,
     scale: 1.05,
     stagger: { each: 0.1 },
