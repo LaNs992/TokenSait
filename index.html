@@ -11,20 +11,35 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./libs/split-type/umd/index.min.js"></script>
+    <script
+      src="./libs/gsap-public/minified/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="./libs/gsap-public/minified/gsap.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
     <div class="fon__img">
       <header class="container__header">
         <div class="header__block">
           <a href="#" class="header__logo">
-            <img src="/img/logo_colored_sign_black_text.png" alt="logo" />
+            <img src="./img/logo_colored_sign_black_text.png" alt="logo" />
           </a>
           <nav class="header__menu header__menu--adaptive">
             <ul class="header__menu-list">
               <li class="header__menu-item"><a href="#">Our team</a></li>
-              <li class="header__menu-item"><a href="#">Tokens</a></li>
-              <li class="header__menu-item"><a href="#">Connect wallet</a></li>
+              <li class="header__menu-item">
+                <a href="#tokens">Tokens</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#token__start">Connect wallet</a>
+              </li>
               <li class="header__menu-item"><a href="#">Lightpaper</a></li>
             </ul>
           </nav>
@@ -37,9 +52,9 @@
         <div class="mobile-menu">
           <button class="close-menu" aria-label="Close Menu">&times;</button>
           <ul>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Tokens</a></li>
-            <li><a href="#">Connect Wallet</a></li>
+            <li><a href="#usteam">Our Team</a></li>
+            <li><a href="#tokens">Tokens</a></li>
+            <li><a href="#token__start">Connect Wallet</a></li>
             <li><a href="#">Lightpaper</a></li>
           </ul>
           <div class="auth-buttons--menu">
@@ -64,7 +79,7 @@
           <a href="#" class="auth-buttons sign-up learn-more">Learn More</a>
         </div>
         <div class="hero-image">
-          <img src="/img/img (2)-Photoroom.png" class="phone phone-front" />
+          <img src="./img/img (2)-Photoroom.png" class="phone phone-front" />
         </div>
       </section>
     </div>
@@ -72,7 +87,7 @@
       <div class="container__cardfor">
         <div class="cardfor">
           <div class="card__img">
-            <img src="/img/card/Vector (2).png" class="" />
+            <img src="./img/card/Vector (2).png" class="" />
           </div>
           <div class="card__main--text">
             For <span class="col__greentxt">Creators</span>
@@ -85,12 +100,12 @@
           </div>
           <div class="card__learn">
             <span class="col__greentxt">Learn More</span>
-            <img src="/img/card/arrow-right-ic.png" alt="" />
+            <img src="./img/card/arrow-right-ic.png" alt="" />
           </div>
         </div>
         <div class="cardfor card__tw">
           <div class="card__img col__blue">
-            <img src="/img/card/Frame (1).png" class="" />
+            <img src="./img/card/Frame (1).png" class="" />
           </div>
           <div class="card__main--text">
             For <span class="col__bluetxt">Holders</span>
@@ -105,12 +120,12 @@
           </div>
           <div class="card__learn">
             <span class="col__bluetxt">Learn More</span>
-            <img src="/img/arrow-right-icbl.png" alt="" />
+            <img src="./img/arrow-right-icbl.png" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section id="usteam">
       <div class="container__borderimg">
         <div class="block__left">
           <div class="block__r--main">What makes us different?</div>
@@ -252,8 +267,8 @@
           </div>
           <div class="block__textcom">
             <div class="row__text">
-              <div class="token__main">
-                <img src="/img/Group 3.png" alt="" />
+              <div class="token__main" id="token__start">
+                <img src="./img/Group 3.png" alt="" />
                 <span>Tokner is coming</span>
               </div>
               <div class="token__text text__waight">
@@ -310,7 +325,7 @@
 
             <div class="row__img">
               <img
-                src="/img/divcard/Woman-Holding-iPhone-Xs-in-Hand-Mockup 1.png"
+                src="./img/divcard/Woman-Holding-iPhone-Xs-in-Hand-Mockup 1.png"
                 alt=""
               />
             </div>
@@ -321,7 +336,7 @@
     <section>
       <div class="block__maz"></div>
 
-      <div class="block__lowback">
+      <div class="block__lowback" id="tokens">
         <div class="block__main--text">Presale Details</div>
         <div class="maz__cardcont">
           <div class="maz__card main__size">
@@ -409,8 +424,6 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-            <script src="/script/script.js"></script>
           </section>
         </div>
         <div class="block__main--buy">How to buy</div>
@@ -435,11 +448,11 @@
           </div>
         </div>
         <div class="footer__link">
-          <a href="" class="link__txt">Our team</a>
+          <a href="#usteam" class="link__txt">Our team</a>
           <div>/</div>
-          <a href="" class="link__txt">Tokens</a>
+          <a href="#tokens" class="link__txt">Tokens</a>
           <div>/</div>
-          <a href="" class="link__txt">Connect wallet</a>
+          <a href="#token__start" class="link__txt">Connect wallet</a>
           <div>/</div>
           <a href="" class="link__txt">Lightpaper</a>
         </div>
@@ -448,13 +461,13 @@
     <section>
       <div class="footter__container">
         <div class="footer__logo">
-          <img src="/img/logo_colored_sign_black_text.png" alt="" />
+          <img src="./img/logo_colored_sign_black_text.png" alt="" />
         </div>
         <div class="img__link">
-          <img src="/img/Group 23.png" alt="" />
+          <img src="./img/Group 23.png" alt="" />
         </div>
         <div class="img__ads">
-          <img src="/img/Group 22.png" alt="" />
+          <img src="./img/Group 22.png" alt="" />
         </div>
       </div>
     </section>
