@@ -93,7 +93,7 @@ caseTL.from(".list__txt ", {
 let intTL = gsap.timeline({
   scrollTrigger: {
     trigger: ".token__main",
-    start: "top 40%",
+    start: "top 80%",
     end: "bottom bottom",
   },
 });
