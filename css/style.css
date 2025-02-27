@@ -248,6 +248,7 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 43px;
+  padding-right: 20px;
   border-radius: 25px;
 }
 .card__img {
@@ -283,11 +284,11 @@ header {
 }
 .container__cardfor {
   display: flex;
+  gap: 30px;
   margin-top: 200px;
   justify-content: center;
 }
 .card__tw {
-  margin-left: 20px;
   margin-top: 96px;
 }
 .col__blue {
@@ -748,6 +749,9 @@ header {
 @media (max-width: 1200px) {
   .main__text {
     font-size: 25px;
+  }
+  .card__tw {
+    margin-top: 0;
   }
   .main__size {
     display: none;
