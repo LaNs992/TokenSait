@@ -7,6 +7,10 @@
       href="https://fonts.cdnfonts.com/css/century-gothic-paneuropean"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -25,9 +29,23 @@
             </ul>
           </nav>
         </div>
-        <div class="auth-buttons">
+        <div class="auth-buttons hidde_btn">
           <a href="#" class="sign-in">Sign In</a>
           <a href="#" class="sign-up">Sign Up</a>
+        </div>
+        <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+        <div class="mobile-menu">
+          <button class="close-menu" aria-label="Close Menu">&times;</button>
+          <ul>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Tokens</a></li>
+            <li><a href="#">Connect Wallet</a></li>
+            <li><a href="#">Lightpaper</a></li>
+          </ul>
+          <div class="auth-buttons--menu">
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" class="sign-up">Sign Up</a>
+          </div>
         </div>
       </header>
 
@@ -54,7 +72,7 @@
       <div class="container__cardfor">
         <div class="cardfor">
           <div class="card__img">
-            <img src="/img/card/Vector (2).png" class="phone phone-front" />
+            <img src="/img/card/Vector (2).png" class="" />
           </div>
           <div class="card__main--text">
             For <span class="col__greentxt">Creators</span>
@@ -72,7 +90,7 @@
         </div>
         <div class="cardfor card__tw">
           <div class="card__img col__blue">
-            <img src="/img/card/Frame (1).png" class="phone phone-front" />
+            <img src="/img/card/Frame (1).png" class="" />
           </div>
           <div class="card__main--text">
             For <span class="col__bluetxt">Holders</span>
@@ -87,7 +105,7 @@
           </div>
           <div class="card__learn">
             <span class="col__bluetxt">Learn More</span>
-            <img src="/img/card/arrow-right-ic.png" alt="" />
+            <img src="/img/arrow-right-icbl.png" alt="" />
           </div>
         </div>
       </div>
@@ -302,10 +320,11 @@
     </section>
     <section>
       <div class="block__maz"></div>
+
       <div class="block__lowback">
         <div class="block__main--text">Presale Details</div>
         <div class="maz__cardcont">
-          <div class="maz__card">
+          <div class="maz__card main__size">
             <div class="kap">01</div>
             <div class="maz__card--main">Phase One</div>
             <div class="card__date">0/04/2021 - 16/04/2021</div>
@@ -319,7 +338,7 @@
               <span>10000 BNB</span>
             </div>
           </div>
-          <div class="maz__card card__tws">
+          <div class="maz__card card__tws main__size">
             <div class="kap col__bl">02</div>
             <div class="maz__card--main">Phase Two</div>
             <div class="card__date">0/04/2021 - 16/04/2021</div>
@@ -333,7 +352,7 @@
               <span>10000 BNB</span>
             </div>
           </div>
-          <div class="maz__card">
+          <div class="maz__card main__size">
             <div class="kap col__yel">03</div>
             <div class="maz__card--main">Phase Three</div>
             <div class="card__date">0/04/2021 - 16/04/2021</div>
@@ -347,6 +366,52 @@
               <span>10000 BNB</span>
             </div>
           </div>
+          <section class="carousel-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide maz__card">
+                  <div class="kap">01</div>
+                  <div class="maz__card--main">Phase One</div>
+                  <div class="card__date">0/04/2021 - 16/04/2021</div>
+                  <div class="crads__bnb">1 BNB = 100000 WNTR</div>
+                  <div class="cards__soft">
+                    <span>Soft cap: </span><span>5000 BNB</span>
+                  </div>
+                  <div class="cards__soft">
+                    <span>Hard cap: </span><span>10000 BNB</span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide maz__card">
+                  <div class="kap">02</div>
+                  <div class="maz__card--main">Phase Two</div>
+                  <div class="card__date">0/04/2021 - 16/04/2021</div>
+                  <div class="crads__bnb">1 BNB = 100000 WNTR</div>
+                  <div class="cards__soft">
+                    <span>Soft cap: </span><span>5000 BNB</span>
+                  </div>
+                  <div class="cards__soft">
+                    <span>Hard cap: </span><span>10000 BNB</span>
+                  </div>
+                </div>
+                <div class="swiper-slide maz__card">
+                  <div class="kap">02</div>
+                  <div class="maz__card--main">Phase Three</div>
+                  <div class="card__date">0/04/2021 - 16/04/2021</div>
+                  <div class="crads__bnb">1 BNB = 100000 WNTR</div>
+                  <div class="cards__soft">
+                    <span>Soft cap: </span><span>5000 BNB</span>
+                  </div>
+                  <div class="cards__soft">
+                    <span>Hard cap: </span><span>10000 BNB</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script src="/script/script.js"></script>
+          </section>
         </div>
         <div class="block__main--buy">How to buy</div>
         <div class="cards__black">
@@ -370,13 +435,13 @@
           </div>
         </div>
         <div class="footer__link">
-          <div class="link__txt">Our team</div>
+          <a href="" class="link__txt">Our team</a>
           <div>/</div>
-          <div class="link__txt">Tokens</div>
+          <a href="" class="link__txt">Tokens</a>
           <div>/</div>
-          <div class="link__txt">Connect wallet</div>
+          <a href="" class="link__txt">Connect wallet</a>
           <div>/</div>
-          <div class="link__txt">Lightpaper</div>
+          <a href="" class="link__txt">Lightpaper</a>
         </div>
       </div>
     </section>
