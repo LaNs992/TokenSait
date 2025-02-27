@@ -96,6 +96,18 @@ header {
   padding: 20px 50px;
 }
 
+.auth-buttons--menu a {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  border-radius: 52px;
+  color: white;
+  margin-top: 30px;
+}
+.auth-buttons--menu {
+  margin-top: 30px;
+}
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -116,7 +128,7 @@ header {
   color: white;
 }
 .auth-buttons {
-  z-index: 2;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -937,6 +949,9 @@ header {
   .container__cardfor {
     margin-top: 30px;
   }
+  .container__coming {
+    padding-top: 60px;
+  }
   .footer__link {
     display: none;
   }
@@ -948,6 +963,7 @@ header {
 @media (max-width: 536px) {
   .block__maz {
     height: 1200px;
+    border-radius: 0px 0px 0px 60px;
   }
   .fon__img {
     max-height: 700px;
